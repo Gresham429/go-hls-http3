@@ -1,0 +1,4 @@
+github.com/elobuff/goamf v0.0.0-20140202161438-1508c33821c7 h1:vhN/EI1fGhqnbxXq1v/WqyuN6duHqBN7QJFrd3V/OvA=
+github.com/elobuff/goamf v0.0.0-20140202161438-1508c33821c7/go.mod h1:6GKCdFz13ILKFiIivyNRvFxS6k5q5KP7tqIX0li6Suk=
+github.com/jcoene/gologger v0.0.0-20150511233422-6bdddb86fa18 h1:JD65kBPjb6bWQSBtxhDUXqit/d4AUxyGm0QSPj0BdWM=
+github.com/jcoene/gologger v0.0.0-20150511233422-6bdddb86fa18/go.mod h1:tCwl7AvT+yfULcpz1UMvA+ruRPm629kMwbDv2s3ADkE=

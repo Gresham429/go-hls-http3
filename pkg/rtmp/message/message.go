@@ -45,9 +45,9 @@ type RTMPMessage struct {
 // RTMPHeader is the structure of the RTMP header
 type RTMPHeader struct {
 	Timestamp     uint32
+	Length        uint32
+	StreamID      uint32
 	MessageTypeID uint8
-	Length        [3]byte
-	StreamID      [3]byte
 }
 
 // GetHeader returns the header of the RTMP message

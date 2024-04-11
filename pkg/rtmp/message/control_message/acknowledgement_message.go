@@ -2,7 +2,6 @@ package control_message
 
 import (
 	"github.com/Gresham429/go-hls-http3/pkg/rtmp/message"
-	"github.com/Gresham429/go-hls-http3/utils"
 )
 
 // AcknowledgementPayload is the payload of the acknowledgement message
@@ -14,8 +13,8 @@ type AcknowledgementPayload struct {
 func (a *AcknowledgementPayload) CreateHeader() *message.RTMPHeader {
 	return &message.RTMPHeader{
 		MessageTypeID: uint8(message.MessageTypeAcknowledgement),
-		Length:        utils.ConvertToThreeBytes(11),
-		StreamID:      utils.ConvertToThreeBytes(0),
+		Length:        15,
+		StreamID:      0,
 	}
 }
 

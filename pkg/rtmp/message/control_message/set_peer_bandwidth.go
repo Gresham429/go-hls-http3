@@ -2,7 +2,6 @@ package control_message
 
 import (
 	"github.com/Gresham429/go-hls-http3/pkg/rtmp/message"
-	"github.com/Gresham429/go-hls-http3/utils"
 )
 
 // SetPeerBandwidthPayload is the payload of the SetPeerBandwidth message
@@ -15,8 +14,8 @@ type SetPeerBandwidthPayload struct {
 func (s *SetPeerBandwidthPayload) CreateHeader() *message.RTMPHeader {
 	return &message.RTMPHeader{
 		MessageTypeID: uint8(message.MessageTypeSetPeerBandwidth),
-		Length:        utils.ConvertToThreeBytes(11),
-		StreamID:      utils.ConvertToThreeBytes(0),
+		Length:        15,
+		StreamID:      0,
 	}
 }
 

@@ -2,7 +2,6 @@ package control_message
 
 import (
 	"github.com/Gresham429/go-hls-http3/pkg/rtmp/message"
-	"github.com/Gresham429/go-hls-http3/utils"
 )
 
 // WindowAcknowledgementSizePayload is the payload of the window acknowledgement size message
@@ -14,8 +13,8 @@ type WindowAcknowledgementSizePayload struct {
 func (w *WindowAcknowledgementSizePayload) CreateHeader() *message.RTMPHeader {
 	return &message.RTMPHeader{
 		MessageTypeID: uint8(message.MessageTypeWindowAcknowledgementSize),
-		Length:        utils.ConvertToThreeBytes(11),
-		StreamID:      utils.ConvertToThreeBytes(0),
+		Length:        15,
+		StreamID:      0,
 	}
 }
 

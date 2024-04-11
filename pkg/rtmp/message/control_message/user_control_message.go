@@ -2,7 +2,6 @@ package control_message
 
 import (
 	"github.com/Gresham429/go-hls-http3/pkg/rtmp/message"
-	"github.com/Gresham429/go-hls-http3/utils"
 )
 
 // User Control Message types
@@ -31,8 +30,8 @@ func (u *UserControlPayload) GetPayloadLength() uint32 {
 func (u *UserControlPayload) CreateHeader() *message.RTMPHeader {
 	return &message.RTMPHeader{
 		MessageTypeID: uint8(message.MessageTypeUserControlMessage),
-		Length:        utils.ConvertToThreeBytes(7 + u.GetPayloadLength()),
-		StreamID:      utils.ConvertToThreeBytes(0),
+		Length:        11 + u.GetPayloadLength(),
+		StreamID:      0,
 	}
 }
 
